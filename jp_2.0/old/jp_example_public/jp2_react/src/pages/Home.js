@@ -15,12 +15,11 @@ export default function Home() {
         //align="center" //zarovná doprostřed
         gutterBottom //vytvoří mezeru pod textem
       >
-        <strong>Systém pro správu materiálu a prodkuktů</strong>
+        <strong>Podnikový systém</strong>
       </Typography>
       <Typography color="primary" variant="h5" sx={{ mt: 4 }}>
         Pokračujte výběrem libovolné sekce a zkuste přidat materiál, produkt,
-        prodejní kanál. Poté můžete vložit transakce, podívat se na statistiku a
-        mnohé další.
+        prodejní kanál. Poté můžete vložit transakce, podívat se na statistiku a další.
       </Typography>
       <Stack
         direction={{ sm: "column", md: "row" }}
@@ -53,7 +52,7 @@ export default function Home() {
         </Box>
       </Stack>
       <Typography variant="h6" sx={{ mt: 6, color: "error.main" }}>
-        Verze slouží pouze k prezetačním účelům
+        Verze slouží pouze k prezentačním účelům
       </Typography>
     </div>
   );

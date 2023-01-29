@@ -9,7 +9,7 @@ import {
     XAxis,
     YAxis,
 } from "recharts";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function MonthStatistic(props) {
     // let [data, setData] = useState([]);
@@ -24,6 +24,8 @@ function MonthStatistic(props) {
     //     setData(res.data)
     //     //console.log("data: ", res.data);
     // })};
+
+    if (props.data.length === 0)  return <Typography>Žádná data ke grafickému zobrazení</Typography>;
 
  
 return (

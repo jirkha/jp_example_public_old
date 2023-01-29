@@ -10,13 +10,13 @@ import {
     XAxis,
     YAxis,
 } from "recharts";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function DayStatistic({data}) {
     const [dayData, setDayData] = useState([]);
 
     useEffect(() => {
-      //console.log("data", data);
+      console.log("data", data);
       setDayData(data.reverse());
     }, [data, dayData]);
 
@@ -35,6 +35,8 @@ function DayStatistic({data}) {
       let year = objectDate.getFullYear();
       return `${day}.${month}.${year}`
     }
+
+    if (data.length === 0) return <Typography>Žádná data ke grafickému zobrazení</Typography>
 
  
 return (
