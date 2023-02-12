@@ -193,6 +193,41 @@ export default function NavbarJP() {
               </Grid>
             </Grid>
           </Box>
+          <Box sx={{ display: { xs: "none", md: "inline" } }}>
+            <Grid container>
+              <Grid item xs={12}>
+                <Link
+                  //className={styles.link}
+                  //indicatorColor="secondary"
+                  component="button"
+                  //key={item.name}
+                  sx={
+                    "/aboutme" === pathname.pathname
+                      ? {
+                          marginRight: 2,
+                          //backgroundColor: "primary.light",
+                          border: 2, //bílé okraje
+                          borderRadius: "5px", //zaoblení
+                          p: 1, // odsazení okraje od obsahu
+                          fontWeight: "bold", //tloušťka písma
+                          fontSize: 15, // velikost textu
+                        }
+                      : {
+                          marginRight: 2,
+                        }
+                  }
+                  variant="button"
+                  underline="hover"
+                  href="/aboutme"
+                  //label={item.name}
+                  onClick={() => navigate("/aboutme")}
+                  color={"/aboutme" === pathname.pathname ? "yellow" : "yellow"}
+                >
+                  O autorovi
+                </Link>
+              </Grid>
+            </Grid>
+          </Box>
 
           <Box sx={{ display: { xs: "block", md: "none" } }}>
             <IconButton onClick={() => setOpen(true)}>

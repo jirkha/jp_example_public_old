@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import img from "../assets/j&p_img_candle.jpg";
 import img2 from "../assets/pistacie1-8.jpg";
 import img3 from "../assets/vosk_krabicka.jpg";
@@ -17,14 +17,23 @@ export default function Home() {
       >
         <strong>Podnikový systém</strong>
       </Typography>
-      <Typography color="primary" variant="h5" sx={{ mt: 4 }}>
+      <Typography color="primary" variant="h5" sx={{ mt: 2 }}>
         Pokračujte výběrem libovolné sekce a zkuste přidat materiál, produkt,
-        prodejní kanál. Poté můžete vložit transakce, podívat se na statistiku a další.
+        prodejní kanál. Poté můžete vložit transakce, podívat se na statistiku a
+        další.
+      </Typography>
+      <Typography color="primary" variant="h5" sx={{ mt: 3 }}>
+        Pokud se chcete dozvědět něco víc o autorovi této aplikace i o aplikaci
+        samotné, klikněte
+        <Link sx={{ ml: 1 }} href="/aboutme#/aboutme">
+          ZDE
+        </Link>
       </Typography>
       <Stack
         direction={{ sm: "column", md: "row" }}
         spacing={{ xs: 1, sm: 2, md: 6 }}
         sx={{ mt: 3 }}
+        justifyContent="space-between"
       >
         <Box
           height="100%"
@@ -32,7 +41,7 @@ export default function Home() {
           justifyContent="center"
           flexDirection="column"
         >
-          <img src={img3} width="390" height="285" alt="img3" />
+          <img src={img3} width="261" height="191" alt="img3" />
         </Box>
         <Box
           height="100%"
@@ -40,7 +49,7 @@ export default function Home() {
           justifyContent="center"
           flexDirection="column"
         >
-          <img src={img} width="390" height="285" alt="img" />
+          <img src={img} width="261" height="191" alt="img" />
         </Box>
         <Box
           height="100%"
@@ -48,7 +57,7 @@ export default function Home() {
           justifyContent="center"
           flexDirection="column"
         >
-          <img src={img2} width="390" height="285" alt="img2" />
+          <img src={img2} width="261" height="191" alt="img2" />
         </Box>
       </Stack>
       <Typography variant="h6" sx={{ mt: 6, color: "error.main" }}>

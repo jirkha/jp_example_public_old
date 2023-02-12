@@ -17,7 +17,7 @@ function ListMaterialPage() {
           align="center" //zarovná doprostřed
           gutterBottom //vytvoří mezeru pod textem
         >
-          &#9782; Materiál
+         Materiál
         </Typography>
         {/* </HeaderPage> */}
         <TableItem />

@@ -30,6 +30,7 @@ import Footer from "./components/Footer";
 import ListTransactionPage from "./pages/ListTransactionPage";
 import SalePage from "./pages/SalePage";
 import SaleDetailPage from "./pages/SaleDetailPage";
+import AboutMePage from "./pages/AboutMePage";
 
 function App() {
 
@@ -91,6 +92,10 @@ function App() {
               <Route
                 path="/sale_detail/:saleId"
                 element={<SaleDetailPage />}
+              ></Route>
+              <Route
+                path="/aboutme"
+                element={<AboutMePage />}
               ></Route>
             </Routes>
           </Container>
